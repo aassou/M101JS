@@ -1,0 +1,16 @@
+{
+  "name": "challenge",
+  "version": "0.0.1",
+  "description": "An app to insert movie data to a MongoDB collection.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "consolidate": "^0.14.1",
+    "express": "~4.13.4",
+    "mongodb": "~2.1.19",
+    "nunjucks": "~2.4.2"
+  },
+  "author": "Marvin Yan",
+  "license": "0BSD",
+  "private": true
+}
