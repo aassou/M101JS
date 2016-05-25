@@ -1,0 +1,25 @@
+midnight-cafe:hw1-1 marvinyan$ mongorestore dump
+2016-05-24T23:39:32.680-0400	building a list of dbs and collections to restore from dump dir
+2016-05-24T23:39:32.680-0400	reading metadata for m101.hw1_1 from dump/m101/hw1_1.metadata.json
+2016-05-24T23:39:33.097-0400	restoring m101.hw1_1 from dump/m101/hw1_1.bson
+2016-05-24T23:39:33.098-0400	restoring indexes for collection m101.hw1_1 from metadata
+2016-05-24T23:39:33.104-0400	finished restoring m101.hw1_1 (1 document)
+2016-05-24T23:39:33.104-0400	done
+midnight-cafe:hw1-1 marvinyan$ mongo
+MongoDB shell version: 3.2.6
+connecting to: test
+Server has startup warnings:
+2016-05-24T23:38:53.179-0400 I CONTROL  [initandlisten]
+2016-05-24T23:38:53.179-0400 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> show dbs
+local  0.000GB
+m101   0.000GB
+video  0.000GB
+> use m101
+switched to db m101
+> show collections
+hw1_1
+> db.hw1_1.find()
+{ "_id" : ObjectId("51e4524ef3651c651a42331c"), "answer" : "Hello from MongoDB!" }
+> exit
+bye
