@@ -1,0 +1,2 @@
+> db.movieDetails.find({ genres: ["Comedy", "Crime"] }).count()
+20

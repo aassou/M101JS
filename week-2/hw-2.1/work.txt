@@ -1,0 +1,51 @@
+midnight-cafe:creating_documents marvinyan$ mongo
+MongoDB shell version: 3.2.6
+connecting to: test
+Server has startup warnings:
+2016-06-04T00:37:14.411-0400 I CONTROL  [initandlisten]
+2016-06-04T00:37:14.411-0400 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> show dbs
+challenge  0.000GB
+local      0.000GB
+m101       0.000GB
+video      0.001GB
+> use video
+switched to db video
+> db.movieDetails.find({ year: 2013, rated: "PG-13", "awards.wins": 0 }).pretty()
+{
+	"_id" : ObjectId("5692a3e124de1e0ce2dfda22"),
+	"title" : "A Decade of Decadence, Pt. 2: Legacy of Dreams",
+	"year" : 2013,
+	"rated" : "PG-13",
+	"released" : ISODate("2013-09-13T04:00:00Z"),
+	"runtime" : 65,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Documentary"
+	],
+	"director" : "Drew Glick",
+	"writers" : [
+		"Drew Glick"
+	],
+	"actors" : [
+		"Gordon Auld",
+		"Howie Boulware Jr.",
+		"Tod Boulware",
+		"Chen Drachman"
+	],
+	"plot" : "A behind the scenes look at the making of A Tiger in the Dark: The Decadence Saga.",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt2199902",
+		"rating" : 8,
+		"votes" : 50
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
