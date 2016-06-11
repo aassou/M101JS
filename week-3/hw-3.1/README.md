@@ -1,4 +1,4 @@
-## Homework 3.1
+## Homework: 3.1
 
 When using find() in the Node.js driver, which of the following best describes when the driver will send a query to MongoDB?
 
