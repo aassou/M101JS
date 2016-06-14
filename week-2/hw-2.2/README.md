@@ -9,8 +9,8 @@ NOTE: We are not asking you to consider specifically which documents would be ou
     { "title" : "Shakespeare in Love" }
 
 - [ ] db.movieDetails.find({title: ""}, {title: 1})
-- [ ]db.movieDetails.find({title: "Muppets from Space"}, {title: 1})
-- [ ]db.movieDetails.find({}, {title: 1})
-- [x]db.movieDetails.find({}, {title: 1, _id: 0})
-- [ ]db.movieDetails.find({}, {title})
-- [x]db.movieDetails.find({year: 1964}, {title: 1, _id: 0})
+- [ ] db.movieDetails.find({title: "Muppets from Space"}, {title: 1})
+- [ ] db.movieDetails.find({}, {title: 1})
+- [x] db.movieDetails.find({}, {title: 1, _id: 0})
+- [ ] db.movieDetails.find({}, {title})
+- [x] db.movieDetails.find({year: 1964}, {title: 1, _id: 0})
